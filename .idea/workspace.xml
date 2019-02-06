@@ -4,7 +4,9 @@
     <option name="showLiveBeansGraph" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f859fb6-f932-4f56-8658-9984ab510076" name="Default Changelist" comment="" />
+    <list default="true" id="1f859fb6-f932-4f56-8658-9984ab510076" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ly-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ly-registry/target/" />
@@ -38,7 +40,7 @@
           <entry key="iml" value="1" />
           <entry key="java" value="147" />
           <entry key="pom" value="2" />
-          <entry key="xml" value="48" />
+          <entry key="xml" value="49" />
           <entry key="yml" value="25" />
         </counts>
       </usages-collector>
@@ -47,21 +49,21 @@
           <entry key="CLASS" value="11" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="147" />
-          <entry key="XML" value="50" />
+          <entry key="XML" value="51" />
           <entry key="YAML" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="64" />
-          <entry key="xml" value="41" />
+          <entry key="xml" value="42" />
           <entry key="yml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="64" />
-          <entry key="XML" value="41" />
+          <entry key="XML" value="42" />
           <entry key="YAML" value="24" />
         </counts>
       </usages-collector>
@@ -81,11 +83,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/leyou/item/service/BrandService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="-408">
+              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ly-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -99,6 +113,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -106,7 +123,6 @@
         <option value="$PROJECT_DIR$/ly-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/ly-item/pom.xml" />
         <option value="$PROJECT_DIR$/ly-registry/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ly-common/pom.xml" />
         <option value="$PROJECT_DIR$/ly-common/src/main/java/com/leyou/common/exception/LyException.java" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-service/pom.xml" />
         <option value="$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/leyou/item/web/ItemController.java" />
@@ -135,6 +151,7 @@
         <option value="$PROJECT_DIR$/ly-upload/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ly-upload/src/test/java/com/leyou/upload/FdfsTest.java" />
         <option value="$PROJECT_DIR$/ly-upload/src/main/java/com/leyou/upload/service/UploadService.java" />
+        <option value="$PROJECT_DIR$/ly-common/pom.xml" />
       </list>
     </option>
   </component>
@@ -191,6 +208,7 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -202,6 +220,11 @@
             <path>
               <item name="leyou" type="b2602c69:ProjectViewProjectNode" />
               <item name="leyou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leyou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leyou" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leyou" type="b2602c69:ProjectViewProjectNode" />
@@ -477,7 +500,7 @@
       <workItem from="1547194213995" duration="5944000" />
       <workItem from="1548644414435" duration="5695000" />
       <workItem from="1549112772017" duration="2927000" />
-      <workItem from="1549117383913" duration="377000" />
+      <workItem from="1549117383913" duration="1311000" />
     </task>
     <servers />
   </component>
@@ -490,7 +513,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30351000" />
+    <option name="totallyTimeSpent" value="31285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,8 +526,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.34652665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712643" visible="true" weight="0.34652665" />
       <window_info id="Structure" order="1" sideWeight="0.50287354" side_tool="true" weight="0.26171243" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -518,7 +542,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2890411" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.5863014" />
@@ -676,13 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ly-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -896,8 +913,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ly-item/ly-item-service/src/main/java/com/leyou/item/service/BrandService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="-408">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
