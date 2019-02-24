@@ -11,18 +11,16 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1
-#    instance-id: ${spring.application.name}:${server.port}
+#   instance-id: ${spring.application.name}:${server.port}
 zuul:
   prefix: /api # 添加路由前缀
   retryable: true
   routes:
     # 微服务名: 要映射到到地址
     item-service: /item/** # 将商品微服务映射到/item/**
-    #    search-service: /search/** # 将查询微服务映射到/search/**
-    upload-service:
-      path: /upload/** # 将上传微服务映射到/upload/**
-      serviceId: upload-service
-      strip-prefix: false
+    user-service: /user/**
+    auth-service: /auth/**
+
 ribbon:
   ConnectTimeout: 250 # 连接超时时间(ms)
   ReadTimeout: 2000 # 通信超时时间(ms)
@@ -36,3 +34,12 @@ hystrix:
         isolation:
           thread:
             timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
+
+ly:
+  jwt:
+    pubKeyPath: /Users/huangqiangwen/Desktop/未命名文件夹/rsa.pub # 公钥地址
+    filter:
+    - /api/auth
+    - /api/user/register
+    - /api/user/check
+    - /api/item

@@ -13,6 +13,9 @@
         <module>ly-item</module>
         <module>ly-common</module>
         <module>ly-upload</module>
+        <module>ly-page</module>
+        <module>ly-user</module>
+        <module>ly-auth-center</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -71,6 +74,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -80,6 +84,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+            <!-- provided表明该包只在编译和测试的时候用,即打包的时候并不会把此jar包打入包中-->
         </dependency>
     </dependencies>
 

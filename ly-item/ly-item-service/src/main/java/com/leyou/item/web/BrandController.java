@@ -27,6 +27,11 @@ public class BrandController {
    * @param key
    * @return
    */
+  //  page：当前页，int
+  //  rows：每页大小，int
+  //  sortBy：排序字段，String
+  //  desc：是否为降序，boolean
+  //  key：搜索关键词，String
   @GetMapping("page")
   public ResponseEntity<PageResult<Brand>> queryBrandByPage(
       @RequestParam(value = "page", defaultValue = "1") Integer page,
