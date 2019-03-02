@@ -1,6 +1,6 @@
 package com.leyou.auth.service;
 
-import com.leyou.auth.bean.UserInfo;
+import com.leyou.auth.bean.UserAuth;
 import com.leyou.auth.client.UserClient;
 import com.leyou.auth.config.JwtProperties;
 import com.leyou.auth.utils.JwtUtils;
@@ -32,7 +32,7 @@ public class AuthService {
     try {
       token =
           JwtUtils.generateToken(
-              new UserInfo(user.getId(), username), prop.getPrivateKey(), prop.getExpire());
+              new UserAuth(user.getId(), username), prop.getPrivateKey(), prop.getExpire());
     } catch (Exception e) {
 
       log.error("[登陆校验]获取的user:{},生成的token:{},error:{}", user, token, e.getMessage());

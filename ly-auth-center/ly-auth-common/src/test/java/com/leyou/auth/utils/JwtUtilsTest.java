@@ -1,6 +1,6 @@
 package com.leyou.auth.utils;
 
-import com.leyou.auth.bean.UserInfo;
+import com.leyou.auth.bean.UserAuth;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +35,7 @@ public class JwtUtilsTest {
   @Test
   public void testGenerateToken() throws Exception {
     // 生成token
-    String token = JwtUtils.generateToken(new UserInfo(20L, "jack"), privateKey, 5);
+    String token = JwtUtils.generateToken(new UserAuth(20L, "jack"), privateKey, 5);
     System.out.println("token = " + token);
   }
 
@@ -46,7 +46,7 @@ public class JwtUtilsTest {
             .trim();
 
     // 解析token
-    UserInfo user = JwtUtils.getInfoFromToken(token, publicKey);
+    UserAuth user = JwtUtils.getInfoFromToken(token, publicKey);
     System.out.println("id: " + user.getId());
     System.out.println("userName: " + user.getUsername());
   }

@@ -1,6 +1,6 @@
 package com.leyou.gateway.filter;
 
-import com.leyou.auth.bean.UserInfo;
+import com.leyou.auth.bean.UserAuth;
 import com.leyou.auth.utils.JwtUtils;
 import com.leyou.gateway.config.JwtProperties;
 import com.netflix.zuul.ZuulFilter;
@@ -57,10 +57,10 @@ public class AuthFilter extends ZuulFilter {
 
     HttpServletRequest request = ctx.getRequest();
 
-    String token = request.getParameter("token");
+    String token = request.getHeader("Authorization");
 
     try {
-      UserInfo userInfo = JwtUtils.getInfoFromToken(token, jwtProperties.getPublicKey());
+      UserAuth userAuth = JwtUtils.getInfoFromToken(token, jwtProperties.getPublicKey());
       // TODO :权限
 
     } catch (Exception e) {

@@ -4,17 +4,15 @@ package com.leyou.auth.bean;
  * @author chenyilei
  * @date 2018/11/21-19:07 hello everyone
  */
-public class UserInfo {
+public class UserAuth {
 
   private Long id;
 
   private String username;
 
-  private String token;
+  public UserAuth() {}
 
-  public UserInfo() {}
-
-  public UserInfo(Long id, String username) {
+  public UserAuth(Long id, String username) {
     this.id = id;
     this.username = username;
   }
@@ -33,13 +31,5 @@ public class UserInfo {
 
   public void setUsername(String username) {
     this.username = username;
-  }
-
-  public String getToken() {
-    return token;
-  }
-
-  public void setToken(String token) {
-    this.token = token;
   }
 }

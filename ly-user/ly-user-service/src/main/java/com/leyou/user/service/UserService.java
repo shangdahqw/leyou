@@ -41,7 +41,7 @@ public class UserService {
 
     user.setPassword(pwd);
     user.setSalt(salt);
-    user.setCreated(new Date());
+    user.setCreatedTime(new Date());
     userMapper.insert(user);
   }
 

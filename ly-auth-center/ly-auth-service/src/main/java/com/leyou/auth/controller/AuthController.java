@@ -1,6 +1,6 @@
 package com.leyou.auth.controller;
 
-import com.leyou.auth.bean.UserInfo;
+import com.leyou.auth.bean.UserAuth;
 import com.leyou.auth.config.JwtProperties;
 import com.leyou.auth.service.AuthService;
 import com.leyou.auth.utils.JwtUtils;
@@ -55,7 +55,7 @@ public class AuthController {
 
   // 检验用户登入状态, 并且刷新token
   @GetMapping("/verify")
-  public ResponseEntity<UserInfo> verify(
+  public ResponseEntity<String> verify(
       String token, HttpServletRequest request, HttpServletResponse response) {
     if (StringUtils.isBlank(token)) {
       log.error("无权访问 未登陆");
@@ -63,11 +63,10 @@ public class AuthController {
     }
     // 解析对错
     try {
-      UserInfo info = JwtUtils.getInfoFromToken(token, prop.getPublicKey());
+      UserAuth info = JwtUtils.getInfoFromToken(token, prop.getPublicKey());
       // 刷新token
       String newToken = JwtUtils.generateToken(info, prop.getPrivateKey(), prop.getExpire());
-      info.setToken(newToken);
-      return ResponseEntity.ok(info);
+      return ResponseEntity.ok(newToken);
     } catch (Exception e) {
       log.error("[verify]解析错误,过期或无效");
       return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(null);
