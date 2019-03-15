@@ -24,14 +24,25 @@ public class FdfsTest {
 
   @Test
   public void testUpload() throws FileNotFoundException {
-    File file = new File("/Users/huangqiangwen/黄强文文档资料/java项目/乐优商城/必看文件.png");
+    File file = new File("/Users/huangqiangwen/Desktop/毕设/图片/WechatIMG6.jpeg");
     // 上传
+
     StorePath storePath =
-        this.storageClient.uploadFile(new FileInputStream(file), file.length(), "png", null);
+        this.storageClient.uploadFile(new FileInputStream(file), file.length(), "jpeg", null);
     // 带分组的路径
     System.out.println(storePath.getFullPath());
     // 不带分组的路径
     System.out.println(storePath.getPath());
+
+    File file1 = new File("/Users/huangqiangwen/Desktop/毕设/图片/WechatIMG3.jpeg");
+    // 上传
+
+    StorePath storePath1 =
+        this.storageClient.uploadFile(new FileInputStream(file1), file1.length(), "jpeg", null);
+    // 带分组的路径
+    System.out.println(storePath1.getFullPath());
+    // 不带分组的路径
+    System.out.println(storePath1.getPath());
   }
 
   @Test

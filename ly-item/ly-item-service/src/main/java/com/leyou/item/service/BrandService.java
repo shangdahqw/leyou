@@ -54,6 +54,7 @@ public class BrandService {
   @Transactional
   public void saveBrand(Brand brand, List<Long> cids) {
 
+    brand.setImageUrl("http//");
     brand.setId(null);
     int count = brandMapper.insert(brand);
     if (count != 1) {

@@ -29,4 +29,4 @@ fdfs:
     width: 150
     height: 150
   tracker-list:            #TrackerList参数,支持多个
-  - 10.211.55.6:22122
+  - 192.168.1.146:22122
